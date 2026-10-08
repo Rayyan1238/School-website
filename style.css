@@ -1,0 +1,1028 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: white;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SCHOOL COLORS
+========================= */
+
+:root {
+
+    --maroon: #7b1420;
+
+    --dark-maroon: #4d0b13;
+
+    --light-maroon: #f8e9eb;
+
+    --gold: #c7a13a;
+
+    --white: #ffffff;
+
+    --light-gray: #f5f5f5;
+
+    --gray: #666666;
+}
+
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+
+    background-color: var(--dark-maroon);
+
+    color: white;
+
+    padding: 8px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 13px;
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    background-color: white;
+
+    border-bottom: 3px solid var(--maroon);
+
+}
+
+
+
+/* LOGO AREA */
+
+.logo-area {
+
+    padding: 15px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+
+.logo-area img {
+
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: contain;
+
+}
+
+
+
+.logo-area h1 {
+
+    color: var(--maroon);
+
+    font-size: 25px;
+
+    line-height: 1.2;
+
+}
+
+
+
+.logo-area p {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    margin-top: 4px;
+
+}
+
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+
+    background-color: var(--maroon);
+
+    padding: 14px 7%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+}
+
+
+
+nav a:hover {
+
+    color: #f1d78b;
+
+}
+
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+
+    min-height: 540px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 7%;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            rgba(77, 11, 19, 0.92),
+            rgba(123, 20, 32, 0.92)
+        );
+
+}
+
+
+
+.hero-content {
+
+    max-width: 750px;
+
+}
+
+
+
+.welcome-text {
+
+    color: #f1d78b;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+.hero h2 {
+
+    font-size: 60px;
+
+    line-height: 1.08;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.hero-content > p {
+
+    font-size: 18px;
+
+    max-width: 650px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.button {
+
+    display: inline-block;
+
+    background-color: white;
+
+    color: var(--maroon);
+
+    padding: 13px 25px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 4px;
+
+}
+
+
+
+.button:hover {
+
+    background-color: #f1d78b;
+
+}
+
+
+
+/* =========================
+   QUICK INFORMATION
+========================= */
+
+.quick-info {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background-color: white;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.info-box {
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    border-right: 1px solid #ddd;
+
+}
+
+
+
+.info-box:last-child {
+
+    border-right: none;
+
+}
+
+
+
+.info-box h2 {
+
+    color: var(--maroon);
+
+    font-size: 28px;
+
+}
+
+
+
+.info-box p {
+
+    color: var(--gray);
+
+}
+
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+
+    padding: 80px 7%;
+
+}
+
+
+
+.heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+
+.heading p {
+
+    color: var(--maroon);
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+}
+
+
+
+.heading h2 {
+
+    color: var(--dark-maroon);
+
+    font-size: 36px;
+
+    margin-top: 5px;
+
+}
+
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+    background-color: white;
+
+}
+
+
+
+.about-content {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 40px;
+
+}
+
+
+
+.about-text h3 {
+
+    color: var(--maroon);
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.about-text p {
+
+    margin-bottom: 17px;
+
+}
+
+
+
+.motto-box {
+
+    background-color: var(--light-maroon);
+
+    border-left: 6px solid var(--maroon);
+
+    padding: 40px;
+
+}
+
+
+
+.motto-box h3 {
+
+    color: var(--maroon);
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.motto-box h2 {
+
+    color: var(--dark-maroon);
+
+    font-size: 28px;
+
+    line-height: 1.3;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.motto-box p {
+
+    color: var(--gray);
+
+}
+
+
+
+/* =========================
+   ACADEMICS
+========================= */
+
+.academics {
+
+    background-color: var(--light-gray);
+
+}
+
+
+
+.academic-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+
+.academic-card {
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-top: 5px solid var(--maroon);
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+}
+
+
+
+.number {
+
+    color: var(--gold);
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+}
+
+
+
+.academic-card h3 {
+
+    color: var(--maroon);
+
+    font-size: 25px;
+
+    margin: 8px 0 12px;
+
+}
+
+
+
+.academic-card p {
+
+    color: var(--gray);
+
+}
+
+
+
+.board {
+
+    max-width: 850px;
+
+    margin: 30px auto 0;
+
+    background-color: var(--dark-maroon);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+
+.board h3 {
+
+    color: #f1d78b;
+
+    font-size: 25px;
+
+}
+
+
+
+/* =========================
+   FACILITIES
+========================= */
+
+.facilities {
+
+    background-color: white;
+
+}
+
+
+
+.facility-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+
+.facility-card {
+
+    background-color: var(--light-gray);
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    border-bottom: 4px solid var(--maroon);
+
+    transition: 0.3s;
+
+}
+
+
+
+.facility-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.facility-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.facility-card h3 {
+
+    color: var(--maroon);
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.facility-card p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+}
+
+
+
+/* =========================
+   CAMPUS
+========================= */
+
+.campus {
+
+    background-color: var(--light-maroon);
+
+}
+
+
+
+.building-container {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+
+.building-card {
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-top: 5px solid var(--maroon);
+
+}
+
+
+
+.building-card h3 {
+
+    color: var(--maroon);
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+.building-card p {
+
+    color: var(--gray);
+
+}
+
+
+
+.classroom-box {
+
+    max-width: 1050px;
+
+    margin: 25px auto 0;
+
+    padding: 30px;
+
+    background-color: var(--dark-maroon);
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+
+.classroom-box h3 {
+
+    color: #f1d78b;
+
+    font-size: 25px;
+
+}
+
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+    background-color: white;
+
+}
+
+
+
+.contact-box {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 40px;
+
+    border-top: 5px solid var(--maroon);
+
+    background-color: var(--light-gray);
+
+}
+
+
+
+.contact-box h3 {
+
+    color: var(--maroon);
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.contact-box p {
+
+    color: var(--gray);
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background-color: var(--dark-maroon);
+
+    color: white;
+
+    padding: 30px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+
+footer h3 {
+
+    color: #f1d78b;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .logo-area {
+
+        justify-content: center;
+
+        text-align: center;
+
+    }
+
+
+
+    nav {
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+
+    }
+
+
+
+    .hero h2 {
+
+        font-size: 45px;
+
+    }
+
+
+
+    .quick-info {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+
+    .about-content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .academic-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .facility-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .top-bar {
+
+        flex-direction: column;
+
+        gap: 3px;
+
+        text-align: center;
+
+    }
+
+
+
+    .logo-area {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .logo-area h1 {
+
+        font-size: 21px;
+
+    }
+
+
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+
+    .hero {
+
+        min-height: 500px;
+
+        padding: 60px 7%;
+
+    }
+
+
+
+    .hero h2 {
+
+        font-size: 36px;
+
+    }
+
+
+
+    .hero-content > p {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .quick-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .info-box {
+
+        border-right: none;
+
+        border-bottom: 1px solid #ddd;
+
+    }
+
+
+
+    .section {
+
+        padding: 60px 6%;
+
+    }
+
+
+
+    .heading h2 {
+
+        font-size: 28px;
+
+    }
+
+
+
+    .facility-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .building-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    footer {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+}
